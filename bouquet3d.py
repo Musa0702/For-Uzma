@@ -5,12 +5,12 @@ import shutil
 import sys
 import time
 
-FPS = 24
-SPIN_SPEED = 0.6
+FPS = 60
+SPIN_SPEED = 0.4
 TILT = 0.30
 CAM_DIST = 4.0
-MESSAGE = "for you ♥"
-NUM_HEARTS = 18
+MESSAGE = "For my Uzma"
+NUM_HEARTS = 100
 
 WHITE = [244, 248, 251, 254, 255, 231]
 PINK = [125, 162, 168, 205, 211, 218, 225]
@@ -322,7 +322,7 @@ def render(scene, t, cols, rows, hearts):
         if start + i < cols:
             chars[mrow][start + i] = ch
             colors[mrow][start + i] = MSG_COLORS[(i + shift) % len(MSG_COLORS)]
-    hint = "@alishsharma on tiktok!"
+    hint = "I Love You"
     hstart = max(0, (cols - len(hint)) // 2)
     for i, ch in enumerate(hint):
         if hstart + i < cols:
